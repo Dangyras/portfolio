@@ -130,16 +130,16 @@ nav ul li:hover:before {
     opacity: 1;
 }
 
-.nav-toggle:hover span:nth-child(1) {
+.menu-visible .nav-toggle span:nth-child(1) {
     transform: translateX(-3.5px) rotate(-45deg);
     transform-origin: right;
 }
 
-.nav-toggle:hover span:nth-child(2) {
+.menu-visible .nav-toggle span:nth-child(2) {
     opacity: 0;
 }
 
-.nav-toggle:hover span:nth-child(3) {
+.menu-visible .nav-toggle span:nth-child(3) {
     transform: translateX(-3.5px) rotate(45deg);
     transform-origin: right;
 }
@@ -240,6 +240,10 @@ footer {
         flex-direction: column;
         justify-content: center;
         background: #f7da61;
+        transform: scaleY(0);
+        transform-origin: top;
+        overflow: hidden;
+        transition: all 500ms ease-in-out;
     }
 
     nav ul:not(.menu-icons) {
@@ -261,5 +265,9 @@ footer {
     nav .menu-icons {
         justify-content: center;
         padding: 5px 0;
+    }
+
+    .menu-visible nav {
+        transform: scaleY(1);
     }
 }
