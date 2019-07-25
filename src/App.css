@@ -3,6 +3,7 @@
     --main-dark-colour: #1d2022;
     --main-light-colour: #fff;
     --main-accent-colour: #f7db61;
+    --header-icons-colour: #fff;
 }
 
 * {
@@ -32,6 +33,77 @@ a:hover {
     width: 90vw;
     max-width: 1100px;
     margin: 0px auto;
+}
+
+/* Header */
+header {
+    background: var(--main-accent-colour);
+}
+
+.announcement-section {
+    height: 10px;
+    background: var(--main-dark-colour);
+}
+
+.navigation-wrapper {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 70px;
+    display: block;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul li {
+    cursor: pointer;
+    font-style: italic;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+}
+
+nav ul li {
+    font-family: "IBM Plex Sans", sans-serif;
+    color: #333;
+    font-size: 20px;
+    display: inline-block;
+    padding: 5px 15px;
+}
+
+nav ul li:before {
+    content: "";
+    background: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0px;
+    width: 100%;
+    z-index: -1;
+    transition: height 500ms ease-in-out;
+}
+
+nav ul li:hover:before {
+    height: 35px;
+}
+
+.menu-icons .svg-bg {
+    fill: #fff;
+    opacity: 1;
+}
+
+.menu-icons {
+    display: flex;
+}
+
+.menu-icons li {
+    display: inline-flex;
 }
 
 /* Footer */
@@ -89,6 +161,7 @@ footer {
 }
 
 @media (min-width: 576px) {
+    /* Footer */
     .footer-menu .menu {
         flex-direction: row;
     }
