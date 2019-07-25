@@ -33,6 +33,11 @@ export default function Header() {
                                 </li>
                             </ul>
                         </nav>
+                        <button id="mobile-nav-toggle" className="nav-toggle">
+                            <span />
+                            <span className="nav-toggle-middle" />
+                            <span />
+                        </button>
                     </div>
                 </div>
             </div>
