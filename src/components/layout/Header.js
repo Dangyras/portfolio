@@ -46,7 +46,7 @@ class Header extends Component {
                                     </li>
                                 </ul>
                             </nav>
-                            <button id="mobile-nav-toggle" className="nav-toggle" onClick={() => this.toggleMenu()}>
+                            <button className="nav-toggle" onClick={() => this.toggleMenu()}>
                                 <span />
                                 <span className="nav-toggle-middle" />
                                 <span />
