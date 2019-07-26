@@ -1,10 +1,17 @@
 import React, { Component } from "react";
+import History from "../History";
+import Hero from "../Hero";
+import Skills from "../Skills";
+import Work from "../Work";
 
 class Main extends Component {
     render() {
         return (
             <div>
-                <h1>Main</h1>
+                <Hero />
+                <Work />
+                <Skills />
+                <History />
             </div>
         );
     }
