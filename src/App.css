@@ -42,7 +42,10 @@ a:hover {
 
 main section:nth-child(even) {
     background-color: #fafafa;
-    z-index: -1;
+}
+
+main section:nth-child(even) > div {
+    z-index: 2;
     position: relative;
 }
 
