@@ -107,6 +107,7 @@ nav ul:not(.menu-icons) {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    padding: 4px 0;
     background: #1c2122;
 }
 
@@ -116,6 +117,8 @@ nav ul:not(.menu-icons) li:hover:before {
 
 header {
     background: var(--main-accent-colour);
+    position: relative;
+    z-index: 9;
 }
 
 .announcement-section {
@@ -286,6 +289,7 @@ footer {
     nav ul:not(.menu-icons) {
         flex-direction: row;
         background: none;
+        padding: 0;
     }
 
     nav ul:not(.menu-icons) li:hover:before {
