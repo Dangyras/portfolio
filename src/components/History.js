@@ -13,10 +13,7 @@ class History extends Component {
                             <br />
                         </h2>
                         <HistoryList />
-                        <h2 className="section-heading heading-right">
-                            <br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic?
-                            <br />
-                        </h2>
+                        <h2 className="section-heading heading-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic?</h2>
                     </div>
                 </div>
             </section>
