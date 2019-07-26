@@ -3,9 +3,11 @@ import React, { Component } from "react";
 class Work extends Component {
     render() {
         return (
-            <div>
-                <h1>Work</h1>
-            </div>
+            <section>
+                <div className="container">
+                    <h1>Work</h1>
+                </div>
+            </section>
         );
     }
 }
