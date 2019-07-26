@@ -6,6 +6,32 @@
     --header-icons-colour: #fff;
 }
 
+::selection {
+    background: #ffdf55;
+}
+::-moz-selection {
+    background: #ffdf55;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #1d2022;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #333638;
+}
+
 * {
     margin: 0;
     padding: 0;
