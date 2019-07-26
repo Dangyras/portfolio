@@ -4,20 +4,20 @@ class HistoryList extends Component {
     render() {
         return (
             <div className="history-list">
-                <div class="point-wrapper">
-                    <span class="point" />
+                <div className="point-wrapper">
+                    <span className="point shadow" />
                 </div>
-                <div class="point-wrapper">
-                    <span class="point" />
+                <div className="point-wrapper">
+                    <span className="point shadow" />
                 </div>
-                <div class="point-wrapper">
-                    <span class="point" />
+                <div className="point-wrapper">
+                    <span className="point shadow" />
                 </div>
-                <div class="point-wrapper">
-                    <span class="point" />
+                <div className="point-wrapper">
+                    <span className="point shadow" />
                 </div>
-                <div class="point-wrapper">
-                    <span class="point" />
+                <div className="point-wrapper">
+                    <span className="point shadow" />
                 </div>
             </div>
         );

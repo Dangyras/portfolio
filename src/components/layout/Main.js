@@ -11,6 +11,7 @@ class Main extends Component {
             <main>
                 <Hero />
                 <Work />
+                <section />
                 <Skills />
                 <History />
             </main>

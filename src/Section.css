@@ -211,3 +211,32 @@
         box-shadow: 0 0 0 0 rgba(247, 219, 97, 0);
     }
 }
+
+.skills-list ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+}
+
+.skill-item {
+}
+
+.skill-item h4 {
+}
+
+.skill-item .skill-progress {
+    height: 15px;
+    display: block;
+    border-radius: 10px;
+    margin: 5px 0;
+    background: #1e202233;
+    overflow: hidden;
+}
+
+.skill-item .skill-progress:after {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 80%;
+    background: #f7da61;
+}
