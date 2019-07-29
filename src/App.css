@@ -229,7 +229,7 @@ footer {
 
 .menu-section {
     min-height: 100px;
-    padding: 45px 0;
+    padding: 100px 0;
 }
 
 /* Footer menu */
@@ -256,10 +256,8 @@ footer {
 
 .footer-menu .menu li {
     padding: 5px;
-}
-
-.footer-menu .menu li:not(:last-child) {
-    border-bottom: 2px solid var(--main-light-colour);
+    background: #ffffff05;
+    margin: 4px 0;
 }
 
 .footer-menu .menu a {
@@ -315,11 +313,12 @@ footer {
 
     .footer-menu .menu li {
         padding: 0;
+        background: none;
+        margin: 0;
     }
 
     .footer-menu .menu li:not(:last-child) {
         border-right: 2px solid var(--main-light-colour);
-        border-bottom: none;
     }
 }
 
