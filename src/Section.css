@@ -2,8 +2,8 @@
     display: block;
     width: auto;
     margin: 0 auto;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .section-heading {
@@ -12,8 +12,8 @@
     margin-bottom: 30px;
     font-family: "IBM Plex Sans", sans-serif;
     color: #333;
-    font-size: 42px;
-    line-height: 60px;
+    font-size: 35px;
+    line-height: 50px;
     font-weight: 200;
     text-align: left;
 }
@@ -61,6 +61,8 @@
 .history-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    max-width: 600px;
+    margin: auto;
 }
 
 .history-list + .section-heading {
@@ -173,8 +175,8 @@
 
 .experience-content .info {
     position: absolute;
-    bottom: 2px;
-    right: 2px;
+    bottom: 5px;
+    right: 5px;
     width: 25px;
     height: 25px;
     border-radius: 50%;
@@ -187,7 +189,41 @@
     color: #fff;
 }
 
+.skills-list ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+}
+
+.skill-item .skill-progress {
+    height: 15px;
+    display: block;
+    border-radius: 10px;
+    margin: 5px 0;
+    background: #1e202233;
+    overflow: hidden;
+}
+
+.skill-item .skill-progress:after {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 80%;
+    background: #f7da61;
+}
+
 @media (min-width: 576px) {
+    .section-heading {
+        font-size: 42px;
+        line-height: 60px;
+    }
+
+    .skills-list ul {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 768px) {
     .history-list .point {
         height: 36px;
         width: 36px;
@@ -195,6 +231,7 @@
 
     .history-list {
         grid-template-columns: repeat(5, 1fr);
+        max-width: 100%;
     }
 
     .history-list .point-wrapper {
@@ -223,9 +260,6 @@
         z-index: 9999;
         transform-origin: 13px;
     }
-}
-
-@media (min-width: 768px) {
 }
 
 @media (min-width: 992px) {
@@ -261,33 +295,4 @@
         -moz-box-shadow: 0 0 0 0 rgba(247, 219, 97, 0);
         box-shadow: 0 0 0 0 rgba(247, 219, 97, 0);
     }
-}
-
-.skills-list ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 50px;
-}
-
-.skill-item {
-}
-
-.skill-item h4 {
-}
-
-.skill-item .skill-progress {
-    height: 15px;
-    display: block;
-    border-radius: 10px;
-    margin: 5px 0;
-    background: #1e202233;
-    overflow: hidden;
-}
-
-.skill-item .skill-progress:after {
-    content: "";
-    display: block;
-    height: 100%;
-    width: 80%;
-    background: #f7da61;
 }
