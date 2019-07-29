@@ -61,7 +61,7 @@
 .history-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    max-width: 600px;
+    max-width: 450px;
     margin: auto;
 }
 
@@ -168,12 +168,17 @@
     width: 95%;
     z-index: 9999;
     transform: scale(0);
-    transform: scale(1);
+    opacity: 0;
     transform-origin: center;
     padding: 35px 10px 35px 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.card-visible .experience-content {
+    transform: scale(1);
+    opacity: 1;
 }
 
 .experience-content .info {
@@ -213,6 +218,35 @@
     height: 100%;
     width: 80%;
     background: #f7da61;
+}
+
+.time {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    color: #cecece;
+}
+
+.time span {
+    display: block;
+    background: #fff;
+    padding: 0 5px;
+    z-index: 9;
+}
+
+.time:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: none;
+    height: 0;
+    border-top: 2px dashed #f7da61;
 }
 
 @media (min-width: 576px) {
