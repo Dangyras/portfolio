@@ -254,6 +254,7 @@
     position: relative;
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
     margin: 30px 0;
 }
 
@@ -275,10 +276,18 @@
     background: #fff;
     font-size: 16px;
     padding: 0 10px;
+    padding: 0;
+}
+
+.information-list span:first-child {
+    font-weight: bold;
+    font-style: italic;
+    color: #f7da61;
 }
 
 .information-list span:last-child {
     font-weight: bold;
+    font-style: italic;
 }
 
 @media (min-width: 576px) {
@@ -289,6 +298,19 @@
 
     .skills-list ul {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .information-list li {
+        flex-direction: row;
+    }
+
+    .information-list span {
+        padding: 0 10px;
+    }
+
+    .information-list span:first-child {
+        font-weight: 400;
+        color: #1d2022;
     }
 }
 
