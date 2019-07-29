@@ -3,6 +3,7 @@ import History from "../History";
 import Hero from "../Hero";
 import Skills from "../Skills";
 import Work from "../Work";
+import About from "../About";
 import "../../Section.css";
 
 class Main extends Component {
@@ -11,7 +12,7 @@ class Main extends Component {
             <main>
                 <Hero />
                 <Work />
-                <section />
+                <About />
                 <Skills />
                 <History />
             </main>
