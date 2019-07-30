@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import HistoryList from "./HistoryList";
+import HistoryList from "./ExperienceList";
 
 class History extends Component {
     render() {

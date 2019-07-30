@@ -4,7 +4,7 @@ import ExperienceItem from "./ExperienceItem";
 class HistoryList extends Component {
     render() {
         return (
-            <div className="history-list">
+            <div className="experience-list">
                 <ExperienceItem />
                 <ExperienceItem />
                 <ExperienceItem />
