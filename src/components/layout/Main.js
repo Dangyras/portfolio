@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import History from "../History";
 import Hero from "../Hero";
 import Skills from "../Skills";
-import Work from "../Work";
+import Projects from "../Projects";
 import About from "../About";
 import "../../Section.css";
 
@@ -11,7 +11,7 @@ class Main extends Component {
         return (
             <main>
                 <Hero />
-                <Work />
+                <Projects />
                 <About />
                 <Skills />
                 <History />
