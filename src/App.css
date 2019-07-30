@@ -230,7 +230,6 @@ nav ul li:hover {
 }
 
 .nav-toggle .nav-toggle-middle {
-    background: var(--main-accent-colour);
     opacity: 1;
 }
 
