@@ -1,21 +1,26 @@
+/* ---------------------------- [Section styles] ----------------------------
+*/
+
+/* ------------------------------------------------------- [Section wrappers]
+*/
 .section-inner {
     display: block;
     width: auto;
     margin: 0 auto;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding: 80px 0;
 }
 
+/* -------------------------------------------------------- [Section heading]
+*/
 .section-heading {
     display: block;
     max-width: 600px;
     margin-bottom: 30px;
-    font-family: "IBM Plex Sans", sans-serif;
-    color: #333;
     font-size: 35px;
-    line-height: 50px;
+    color: var(--main-dark-colour);
     font-weight: 200;
     text-align: left;
+    line-height: 50px;
 }
 
 .heading-right {
@@ -24,6 +29,8 @@
     margin-right: 0;
 }
 
+/* ----------------------------------------------------------- [Main heading]
+*/
 .heading-styled {
     position: relative;
     font-weight: 400;
@@ -31,149 +38,159 @@
 
 .heading-styled:before {
     content: "";
-    background: #f7db61;
     position: absolute;
     bottom: 7px;
+    z-index: -1;
     height: 11px;
     width: 100%;
-    z-index: -1;
+    background: var(--main-accent-colour);
 }
 
+/* ----------------------------- [Hero section] -----------------------------
+*/
+
+/* ----------------------------------------------------- [Text under heading]
+*/
 .section-heading + p {
     max-width: 600px;
-    font-family: "IBM Plex Sans", sans-serif;
-    color: #737373;
     font-size: 20px;
-    line-height: 40px;
+    color: #737373;
     font-weight: 300;
     text-align: left;
+    line-height: 40px;
 }
 
 .header-link {
-    -webkit-transition: all 200ms ease;
-    transition: all 200ms ease;
-    font-weight: 400;
     display: inline-block;
     padding: 0 5px;
+    font-weight: 400;
+    -webkit-transition: all 200ms ease;
+    transition: all 200ms ease;
 }
 
-/* Experience section */
-.history-list {
+/* -------------------------- [Experience section] --------------------------
+*/
+
+/* -------------------------------------------------------- [Experience list]
+*/
+.experience-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 450px;
     margin: auto;
 }
 
-.history-list + .section-heading {
+/* ----------------------------------------------------- [Experience heading]
+*/
+.experience-list + .section-heading {
     margin-bottom: 0;
     margin-top: 30px;
 }
 
-.history-list .point-wrapper {
+/* ------------------------------------------------------- [Experience point]
+*/
+.experience-list .point-wrapper {
     position: relative;
-
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.history-list .point {
+.experience-list .point {
     position: relative;
     height: 50px;
     width: 50px;
-    background: #1d2022;
+    background: var(--main-dark-colour);
+    border: 2px solid var(--main-dark-colour);
     border-radius: 25px;
-    border: 2px solid #1d2022;
     cursor: pointer;
 }
 
-.history-list .point-wrapper:nth-child(odd):before {
-    content: "";
-    position: absolute;
-    height: 5px;
-    width: 100%;
-    background: #1d2022;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    right: 0;
-    margin: auto;
+.experience-list .point-wrapper:last-child .point {
+    background: var(--main-light-colour);
+    border: 3px dashed var(--main-dark-colour);
 }
 
-.history-list .point-wrapper:nth-child(even):before {
-    content: "";
-    position: absolute;
-    height: 5px;
-    width: 145%;
-    background: #1d2022;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    right: 0;
-    margin: auto;
-    transform-origin: left;
-    transform: rotate(-225deg);
-}
-
-.history-list .point-wrapper:last-child:before {
-    background: none;
-    height: 0;
-    border-top: 5px dashed #1d2022;
-}
-
-.history-list .point-wrapper:last-child .point {
-    background: #fff;
-    border: 3px dashed #1d2022;
-}
-
-.history-list .point-wrapper:after {
+.experience-list .point-wrapper:after {
     content: "";
     display: block;
     padding-bottom: 100%;
 }
 
 .point:after {
-    box-shadow: 0 0 0 rgb(247, 219, 97);
-    animation: pulse 2s infinite;
-}
-
-.point:after {
     content: "";
     position: absolute;
-    height: 10px;
-    width: 10px;
-    background: #f7db61;
     top: 0;
-    border-radius: 25px;
     left: 0;
     bottom: 0;
     right: 0;
+    height: 10px;
+    width: 10px;
     margin: auto;
+    box-shadow: 0 0 0 rgb(247, 219, 97);
+    animation: pulse 2s infinite;
+    background: var(--main-accent-colour);
+    border-radius: 25px;
     transition: all 500ms ease-in-out;
 }
 
+/* -------------------------------------------------- [Experience point line]
+*/
+.experience-list .point-wrapper:nth-child(odd):before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    right: 0;
+    height: 5px;
+    width: 100%;
+    background: var(--main-dark-colour);
+    margin: auto;
+}
+
+.experience-list .point-wrapper:nth-child(even):before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    right: 0;
+    height: 5px;
+    width: 145%;
+    background: var(--main-dark-colour);
+    margin: auto;
+    transform-origin: left;
+    transform: rotate(-225deg);
+}
+
+.experience-list .point-wrapper:last-child:before {
+    background: none;
+    height: 0;
+    border-top: 5px dashed var(--main-dark-colour);
+}
+
+/* -------------------------------------------------- [Experience point card]
+*/
 .experience-content {
     position: absolute;
-    height: 10px;
-    width: 10px;
-    background: #fff;
     top: 13px;
     left: 0;
     bottom: 0;
-    margin: auto;
-    border-radius: 3px;
-    transition: all 500ms ease-in-out;
-    height: 95%;
-    width: 95%;
     z-index: 9999;
-    transform: scale(0);
-    opacity: 0;
-    transform-origin: center;
-    padding: 35px 10px 35px 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 95%;
+    width: 95%;
+    padding: 35px 10px 35px 10px;
+    margin: auto;
+    background: var(--main-light-colour);
+    border-radius: 3px;
+    transition: all 500ms ease-in-out;
+    transform: scale(0);
+    opacity: 0;
+    transform-origin: center;
 }
 
 .card-visible .experience-content {
@@ -185,18 +202,52 @@
     position: absolute;
     bottom: 5px;
     right: 5px;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background: #f7da61;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 25px;
+    height: 25px;
+    background: var(--main-accent-colour);
+    color: var(--main-light-colour);
     font-weight: bold;
     cursor: pointer;
-    color: #fff;
+    border-radius: 50%;
 }
 
+.time {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    color: #cecece;
+    font-weight: bold;
+}
+
+.time span {
+    z-index: 9;
+    display: block;
+    padding: 0 5px;
+    background: var(--main-light-colour);
+}
+
+.time:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 0;
+    margin: auto;
+    background: none;
+    border-top: 2px dashed var(--main-accent-colour);
+}
+
+/* ---------------------------- [Skills section] ----------------------------
+*/
+
+/* ------------------------------------------------------------- [Skill list]
+*/
 .skills-list ul {
     display: grid;
     grid-template-columns: 1fr;
@@ -204,52 +255,27 @@
 }
 
 .skill-item .skill-progress {
-    height: 15px;
     display: block;
-    border-radius: 10px;
+    height: 15px;
     margin: 5px 0;
     background: #1e202233;
+    border-radius: 10px;
     overflow: hidden;
 }
 
 .skill-item .skill-progress:after {
     content: "";
     display: block;
-    height: 100%;
     width: 80%;
-    background: #f7da61;
+    height: 100%;
+    background: var(--main-accent-colour);
 }
 
-.time {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    font-weight: bold;
-    color: #cecece;
-}
+/* -------------------------- [Information section] --------------------------
+*/
 
-.time span {
-    display: block;
-    background: #fff;
-    padding: 0 5px;
-    z-index: 9;
-}
-
-.time:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    background: none;
-    height: 0;
-    border-top: 2px dashed #f7da61;
-}
-
-/* About me */
+/* ------------------------------------------------------------------- [List]
+*/
 .information-list li {
     position: relative;
     display: flex;
@@ -258,28 +284,31 @@
     margin: 30px 0;
 }
 
+/* ------------------------------------------------------------ [Dashed line]
+*/
 .information-list li:before {
     content: "";
     position: absolute;
-    width: 100%;
+    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
+    z-index: 99;
+    width: 100%;
+    height: 0;
     margin: auto;
     background: none;
-    border-top: 2px dashed #f7da61;
-    top: 0;
-    height: 0;
-    z-index: 99;
+    border-top: 2px dashed var(--main-accent-colour);
 }
 
+/* ----------------------------------------------------------------- [Values]
+*/
 .information-list span {
-    display: block;
     z-index: 9;
-    background: #fff;
-    font-size: 16px;
-    padding: 0 10px;
+    display: block;
     padding: 0;
+    font-size: 16px;
+    background: var(--main-light-colour);
 }
 
 .information-list span:first-child {
@@ -287,123 +316,16 @@
 }
 
 .information-list span:last-child {
-    font-weight: bold;
     position: relative;
     top: 5px;
+    font-weight: bold;
 }
 
-@media (min-width: 576px) {
-    .heading-styled:before {
-        bottom: 9px;
-    }
+/* --------------------------- [Projects section] ---------------------------
+*/
 
-    .section-heading {
-        font-size: 42px;
-        line-height: 60px;
-    }
-
-    .skills-list ul {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .information-list li {
-        flex-direction: row;
-    }
-
-    .information-list span {
-        padding: 0 10px;
-    }
-
-    .information-list span:first-child {
-        font-weight: 400;
-        color: #1d2022;
-    }
-
-    .information-list span:last-child {
-        top: 0;
-    }
-
-    .information-list li:before {
-        top: unset;
-        height: 0;
-        z-index: 1;
-    }
-}
-
-@media (min-width: 768px) {
-    .history-list .point {
-        height: 36px;
-        width: 36px;
-    }
-
-    .history-list {
-        grid-template-columns: repeat(5, 1fr);
-        max-width: 100%;
-    }
-
-    .history-list .point-wrapper {
-        justify-content: flex-start;
-    }
-
-    .history-list .point-wrapper:nth-child(odd):before {
-        left: 0;
-        right: 0;
-        margin: auto;
-    }
-
-    .history-list .point-wrapper:nth-child(even):before {
-        width: 100%;
-        left: 0;
-        right: 0;
-        margin: auto;
-        transform: none;
-    }
-
-    .experience-content {
-        top: 0;
-        left: -1px;
-        height: 100%;
-        width: 95%;
-        z-index: 9999;
-        transform-origin: 13px;
-    }
-}
-
-@media (min-width: 992px) {
-}
-
-@media (min-width: 1200px) {
-}
-
-@media (max-width: 576px) {
-}
-
-@-webkit-keyframes pulse {
-    0% {
-        -webkit-box-shadow: 0 0 0 0 rgb(247, 219, 97);
-    }
-    70% {
-        -webkit-box-shadow: 0 0 0 10px rgba(247, 219, 97, 0);
-    }
-    100% {
-        -webkit-box-shadow: 0 0 0 0 rgba(247, 219, 97, 0);
-    }
-}
-@keyframes pulse {
-    0% {
-        -moz-box-shadow: 0 0 0 0 rgb(247, 219, 97);
-        box-shadow: 0 0 0 0 rgb(247, 219, 97);
-    }
-    70% {
-        -moz-box-shadow: 0 0 0 10px rgba(247, 219, 97, 0);
-        box-shadow: 0 0 0 10px rgba(247, 219, 97, 0);
-    }
-    100% {
-        -moz-box-shadow: 0 0 0 0 rgba(247, 219, 97, 0);
-        box-shadow: 0 0 0 0 rgba(247, 219, 97, 0);
-    }
-}
-
+/* ------------------------------------------------------------------- [Menu]
+*/
 ul.projects-menu {
     display: flex;
     margin: 0 -15px;
@@ -412,8 +334,7 @@ ul.projects-menu {
 .projects-menu li {
     display: inline-block;
     font-weight: 600;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding: 0 15px;
     margin-bottom: 16px;
     cursor: pointer;
 }
@@ -424,16 +345,18 @@ ul.projects-menu {
 
 .projects-menu li:first-child a:before {
     content: "";
-    background-color: #f7da61;
-    height: 3px;
-    width: 100%;
     position: absolute;
     left: 0;
     bottom: -8px;
+    width: 100%;
+    height: 3px;
+    background-color: var(--main-accent-colour);
     transform: scale3d(1, 1, 1);
     transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* ------------------------------------------------------------------- [Grid]
+*/
 .projects-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -441,13 +364,15 @@ ul.projects-menu {
     margin-top: 30px;
 }
 
+/* -------------------------------------------------------------- [Grid item]
+*/
 .grid-item-inner {
     position: relative;
     overflow: hidden;
 }
 
 .grid-item-heading {
-    color: #fff;
+    color: var(--main-light-colour);
     transform: translate3d(0, 100%, 0);
     transition: transform 600ms ease-in-out;
     z-index: 9;
@@ -473,6 +398,8 @@ ul.projects-menu {
     opacity: 1;
 }
 
+/* ----------------------------------------------------------- [Grid overlay]
+*/
 .grid-item-overlay {
     position: absolute;
     top: 0;
@@ -496,7 +423,7 @@ ul.projects-menu {
 
 .grid-item-overlay:before {
     content: "";
-    background-color: #f7da61;
+    background-color: var(--main-accent-colour);
     opacity: 0.7;
     position: absolute;
     height: 100%;
@@ -505,7 +432,132 @@ ul.projects-menu {
     bottom: 0;
     right: 0;
     left: 0;
-
     pointer-events: none;
     z-index: 9;
+}
+
+/* ----------------------------- [Media queries] ----------------------------
+*/
+
+@media (min-width: 576px) {
+    /* ----------------------------------------------------------- [Headings]
+    */
+    .heading-styled:before {
+        bottom: 9px;
+    }
+
+    .section-heading {
+        font-size: 42px;
+        line-height: 60px;
+    }
+
+    /* ----------------------------------------------------- [Skills section]
+    */
+    .skills-list ul {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* ------------------------------------------------------- [Info section]
+    */
+    .information-list li {
+        flex-direction: row;
+    }
+
+    .information-list span {
+        padding: 0 10px;
+    }
+
+    .information-list span:first-child {
+        font-weight: 400;
+        color: var(--main-dark-colour);
+    }
+
+    .information-list span:last-child {
+        top: 0;
+    }
+
+    .information-list li:before {
+        top: unset;
+        z-index: 1;
+        height: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    /* ------------------------------------------------- [Experience section]
+    */
+    .experience-list {
+        grid-template-columns: repeat(5, 1fr);
+        max-width: 100%;
+    }
+
+    .experience-list .point-wrapper {
+        justify-content: flex-start;
+    }
+
+    .experience-list .point-wrapper:nth-child(odd):before {
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .experience-list .point-wrapper:nth-child(even):before {
+        width: 100%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        transform: none;
+    }
+
+    .experience-list .point {
+        height: 36px;
+        width: 36px;
+    }
+
+    .experience-content {
+        top: 0;
+        left: -1px;
+        z-index: 9999;
+        width: 95%;
+        height: 100%;
+        transform-origin: 13px;
+    }
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (max-width: 576px) {
+}
+
+/* ------------------------------ [Animations] ------------------------------
+*/
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgb(247, 219, 97);
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 10px rgba(247, 219, 97, 0);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(247, 219, 97, 0);
+    }
+}
+@keyframes pulse {
+    0% {
+        -moz-box-shadow: 0 0 0 0 rgb(247, 219, 97);
+        box-shadow: 0 0 0 0 rgb(247, 219, 97);
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 10px rgba(247, 219, 97, 0);
+        box-shadow: 0 0 0 10px rgba(247, 219, 97, 0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(247, 219, 97, 0);
+        box-shadow: 0 0 0 0 rgba(247, 219, 97, 0);
+    }
 }
