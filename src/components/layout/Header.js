@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import logo from "../../logo.svg";
-import phone from "../../phone.svg";
-import email from "../../email.svg";
-import doc from "../../document.svg";
+import logo from "../../icons/logo.svg";
+import phone from "../../icons/phone.svg";
+import email from "../../icons/email.svg";
+import doc from "../../icons/document.svg";
 
 class Header extends Component {
     constructor(props) {
