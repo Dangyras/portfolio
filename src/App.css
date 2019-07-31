@@ -176,7 +176,7 @@ nav ul li {
     display: inline-block;
     padding: 5px 15px;
     font-size: 20px;
-    color: var(--main-dark-colour);
+    color: var(--main-light-colour);
     font-weight: bold;
     font-style: italic;
     cursor: pointer;
@@ -240,7 +240,7 @@ nav ul li:hover {
     width: 32px;
     border: 2px solid var(--main-dark-colour);
     cursor: pointer;
-    background: var(--main-dark-colour);
+    background: var(--main-light-colour);
 }
 
 .nav-toggle span {
