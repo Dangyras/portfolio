@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import nobigart from "../images/nobigart.png";
 import griliai from "../images/griliai.png";
+import nagido from "../images/nagido.png";
 
 class Projects extends Component {
     render() {
@@ -40,6 +41,19 @@ class Projects extends Component {
                                 <figure className="grid-item shadow">
                                     <div className="grid-item-inner">
                                         <img src={griliai} alt="" />
+                                        <div className="grid-item-overlay">
+                                            <a href="/">
+                                                <div className="grid-item-heading">
+                                                    <h3>Lorem ipsum</h3>
+                                                    <span>Lorem, ipsum dolor.</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </figure>
+                                <figure className="grid-item shadow">
+                                    <div className="grid-item-inner">
+                                        <img src={nagido} alt="" />
                                         <div className="grid-item-overlay">
                                             <a href="/">
                                                 <div className="grid-item-heading">
