@@ -366,9 +366,28 @@ ul.projects-menu {
 
 /* -------------------------------------------------------------- [Grid item]
 */
-.grid-item-inner {
+.grid-item {
     position: relative;
+}
+
+.grid-item:before {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.grid-item-inner {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
     overflow: hidden;
+    border-radius: 5px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .grid-item-heading {
@@ -412,7 +431,7 @@ ul.projects-menu {
 }
 
 .grid-item-overlay a {
-    padding: 30px;
+    padding: 15px;
     width: 100%;
     height: 100%;
     display: flex;
@@ -528,8 +547,11 @@ ul.projects-menu {
     .projects-wrapper {
         grid-gap: 30px;
     }
-}
 
+    .grid-item-overlay a {
+        padding: 30px;
+    }
+}
 @media (min-width: 992px) {
 }
 

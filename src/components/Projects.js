@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import nobigart from "../images/nobigart.png";
+import griliai from "../images/griliai.png";
 
 class Projects extends Component {
     render() {
@@ -21,9 +23,23 @@ class Projects extends Component {
                                 <li>PHP</li>
                             </ul>
                             <div className="projects-wrapper">
-                                <figure className="grid-item">
+                                <figure className="grid-item shadow">
                                     <div className="grid-item-inner">
-                                        <img src="https://source.unsplash.com/random/400x400" alt="" />
+                                        <img src={nobigart} alt="" />
+                                        <div className="grid-item-overlay">
+                                            <a href="/">
+                                                <div className="grid-item-heading">
+                                                    <h3>Nobig.art</h3>
+                                                    <span>Javascript | Shopify</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </figure>
+
+                                <figure className="grid-item shadow">
+                                    <div className="grid-item-inner">
+                                        <img src={griliai} alt="" />
                                         <div className="grid-item-overlay">
                                             <a href="/">
                                                 <div className="grid-item-heading">
@@ -34,20 +50,7 @@ class Projects extends Component {
                                         </div>
                                     </div>
                                 </figure>
-                                <figure className="grid-item">
-                                    <div className="grid-item-inner">
-                                        <img src="https://source.unsplash.com/random/400x400" alt="" />
-                                        <div className="grid-item-overlay">
-                                            <a href="/">
-                                                <div className="grid-item-heading">
-                                                    <h3>Lorem ipsum</h3>
-                                                    <span>Lorem, ipsum dolor.</span>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </figure>
-                                <figure className="grid-item">
+                                <figure className="grid-item shadow">
                                     <div className="grid-item-inner">
                                         <img src="https://source.unsplash.com/random/400x400" alt="" />
                                         <div className="grid-item-overlay">
