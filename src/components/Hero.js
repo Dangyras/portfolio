@@ -13,19 +13,19 @@ class Hero extends Component {
                         <p>
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam facilis voluptas commodi quas dignissimos. Voluptatibus quo qui minima laborum atque non, ratione
                             odit repellendus repudiandae corrupti dignissimos vero ut voluptates!
-                            <a href="#" target="_blank" className="header-link">
+                            <a href="/" target="_blank" className="header-link">
                                 Linkedin
                             </a>
                             and
-                            <a href="#" target="_blank" className="header-link">
+                            <a href="/" target="_blank" className="header-link">
                                 Dribbble
                             </a>
                             , download my
-                            <a href="#" target="_blank" className="header-link">
+                            <a href="/" target="_blank" className="header-link">
                                 resume
                             </a>
-                            ,<a href="#"> </a>or write me an
-                            <a href="#" className="header-link">
+                            ,<a href="/"> </a>or write me an
+                            <a href="/" className="header-link">
                                 email.
                             </a>
                             <span className="fontawesome">

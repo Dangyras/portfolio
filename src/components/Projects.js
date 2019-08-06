@@ -14,7 +14,7 @@ class Projects extends Component {
                         <div className="projects">
                             <ul className="projects-menu">
                                 <li>
-                                    <a>Visi</a>
+                                    <a href="/">Visi</a>
                                 </li>
                                 <li>CSS</li>
                                 <li>React</li>
@@ -25,7 +25,7 @@ class Projects extends Component {
                                     <div className="grid-item-inner">
                                         <img src="https://source.unsplash.com/random/400x400" alt="" />
                                         <div className="grid-item-overlay">
-                                            <a href="">
+                                            <a href="/">
                                                 <div className="grid-item-heading">
                                                     <h3>Lorem ipsum</h3>
                                                     <span>Lorem, ipsum dolor.</span>
@@ -38,7 +38,7 @@ class Projects extends Component {
                                     <div className="grid-item-inner">
                                         <img src="https://source.unsplash.com/random/400x400" alt="" />
                                         <div className="grid-item-overlay">
-                                            <a href="">
+                                            <a href="/">
                                                 <div className="grid-item-heading">
                                                     <h3>Lorem ipsum</h3>
                                                     <span>Lorem, ipsum dolor.</span>
@@ -51,7 +51,7 @@ class Projects extends Component {
                                     <div className="grid-item-inner">
                                         <img src="https://source.unsplash.com/random/400x400" alt="" />
                                         <div className="grid-item-overlay">
-                                            <a href="">
+                                            <a href="/">
                                                 <div className="grid-item-heading">
                                                     <h3>Lorem ipsum</h3>
                                                     <span>Lorem, ipsum dolor.</span>

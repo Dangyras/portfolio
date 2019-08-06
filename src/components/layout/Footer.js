@@ -9,13 +9,13 @@ export default function Footer() {
                         <h3>Feel free to contact me! I'm on the lookout for full-time work opportunities and I'd love to collaborate.</h3>
                         <ul className="menu">
                             <li>
-                                <a href="#">Email</a>
+                                <a href="/">Email</a>
                             </li>
                             <li>
-                                <a href="#">Phone</a>
+                                <a href="/">Phone</a>
                             </li>
                             <li>
-                                <a href="#">Other</a>
+                                <a href="/">Other</a>
                             </li>
                         </ul>
                     </div>
