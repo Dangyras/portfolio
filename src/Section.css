@@ -368,6 +368,7 @@ ul.projects-menu {
 */
 .grid-item {
     position: relative;
+    border-radius: 5px;
 }
 
 .grid-item:before {
@@ -401,6 +402,7 @@ ul.projects-menu {
 .grid-item-inner img {
     display: block;
     width: 100%;
+    padding: 9px;
     transform: scale(1);
     transition: opacity 0.35s, transform 0.35s;
 }

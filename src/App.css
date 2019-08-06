@@ -375,8 +375,8 @@ footer {
         background: rgba(255, 255, 255, 0.3);
     }
 
-    nav ul:not(.menu-icons) li:hover:before {
-        height: 35px;
+    nav ul li:hover:before {
+        height: 38px;
     }
 
     /* ------------------------------------------------------------- [Footer]
