@@ -359,8 +359,8 @@ ul.projects-menu {
 */
 .projects-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
     margin-top: 30px;
 }
 
@@ -521,6 +521,12 @@ ul.projects-menu {
         width: 95%;
         height: 100%;
         transform-origin: 13px;
+    }
+
+    /* --------------------------------------------------- [Projects section]
+    */
+    .projects-wrapper {
+        grid-gap: 30px;
     }
 }
 
