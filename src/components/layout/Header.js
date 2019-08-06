@@ -31,8 +31,12 @@ class Header extends Component {
                             </div>
                             <nav>
                                 <ul>
-                                    <li>darbai</li>
-                                    <li>apie mane</li>
+                                    <li>
+                                        <a href="#section-projects">darbai</a>
+                                    </li>
+                                    <li>
+                                        <a href="#section-about">apie mane</a>
+                                    </li>
                                 </ul>
                                 <ul className="menu-icons">
                                     <li>

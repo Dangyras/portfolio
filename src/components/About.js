@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class About extends Component {
     render() {
         return (
-            <section>
+            <section id="section-about">
                 <div className="container">
                     <div className="section-inner">
                         <h2 className="section-heading">
