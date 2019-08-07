@@ -191,6 +191,10 @@ nav ul li {
     transition: color 500ms ease-in-out;
 }
 
+nav ul li a {
+    color: var(--main-light-colour);
+}
+
 nav ul li:before {
     content: "";
     position: absolute;
@@ -207,7 +211,7 @@ nav ul li:hover:before {
     height: 35px;
 }
 
-nav ul li:hover {
+nav ul li:hover a {
     color: var(--main-dark-colour);
 }
 
