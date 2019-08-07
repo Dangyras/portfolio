@@ -53,6 +53,10 @@ body {
     color: var(--main-dark-colour);
 }
 
+.no-sroll {
+    overflow: hidden;
+}
+
 /* ------------------------------- [Elements] -------------------------------
 */
 
