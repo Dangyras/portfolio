@@ -191,7 +191,7 @@ nav ul li {
     transition: color 500ms ease-in-out;
 }
 
-nav ul li a {
+nav ul:not(.menu-icons) li a {
     color: var(--main-light-colour);
 }
 
@@ -376,6 +376,10 @@ footer {
 
     nav ul li {
         min-width: 54px;
+        color: var(--main-dark-colour);
+    }
+
+    nav ul:not(.menu-icons) li a {
         color: var(--main-dark-colour);
     }
 
