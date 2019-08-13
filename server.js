@@ -5,7 +5,7 @@ const app = express();
 app.get("/api/projects", (req, res) => {
     const projects = [];
 
-    res.json(customers);
+    res.json(projects);
 });
 
 const port = 5000;
